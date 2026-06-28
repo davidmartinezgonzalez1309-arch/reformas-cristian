@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reformas Cristian | Reformas, Pintura y Reparaciones en Granada, Málaga y Jaén</title>
+  <meta name="description" content="Reformas, pintura interior y exterior, reparaciones y albañilería en Granada, Málaga y Jaén. 20 años de experiencia. Presupuesto sin compromiso por videollamada o en persona.">
+  <meta name="keywords" content="reformas granada, reformas malaga, reformas jaen, pintor granada, pintor malaga, pintor jaen, pintura granada, pintura malaga, pintura jaen, reparaciones granada, reparaciones malaga, reparaciones jaen, albañileria granada, albañileria malaga, albañileria jaen, fontaneria granada, fontaneria malaga, electricidad granada, decoracion interiores, reformas integrales, presupuesto reformas">
+  <meta name="author" content="Reformas Cristian">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="ES-GR">
+  <meta name="geo.placename" content="Granada">
+  <meta property="og:title" content="Reformas Cristian | Reformas, Pintura y Reparaciones en Granada, Málaga y Jaén">
+  <meta property="og:description" content="Reformas, pintura, reparaciones y albañilería general en Granada, Málaga y Jaén. 20 años de experiencia. Presupuesto sin compromiso.">
+  <meta property="og:image" content="foto1.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Reformas Cristian">
+  <link rel="canonical" href="">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Reformas Cristian",
+    "description": "Reformas, pintura interior y exterior, reparaciones y albañilería en Granada, Málaga y Jaén.",
+    "image": "foto1.png",
+    "telephone": "+34670757224",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Parque Nueva Granada",
+      "addressLocality": "Granada",
+      "addressRegion": "Granada",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "37.1773",
+      "longitude": "-3.5986"
+    },
+    "areaServed": ["Granada", "Málaga", "Jaén"],
+    "serviceType": ["Reformas", "Pintura", "Reparaciones", "Albañilería", "Decoración de interiores"],
+    "openingHours": "Mo-Fr 08:00-19:00",
+    "priceRange": "Presupuesto"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --color-primario: #1B2A4A;
+      --color-acento: #E8852A;
+      --color-fondo: #F8F6F3;
+      --color-texto: #333333;
+      --color-blanco: #ffffff;
+      --font-titulos: 'Oswald', sans-serif;
+      --font-cuerpo: 'DM Sans', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-cuerpo);
+      color: var(--color-texto);
+      background: var(--color-fondo);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ═══════════════════════════════════════════════════
+       TYPOGRAPHY
+    ═══════════════════════════════════════════════════ */
+    .section-title {
+      font-family: var(--font-titulos);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      line-height: 1;
+      color: var(--color-primario);
+      margin-bottom: 0.5em;
+    }
+    .section-subtitle {
+      font-family: var(--font-cuerpo);
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 540px;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+    .section-header .section-subtitle { margin: 0 auto; }
+
+    /* ═══════════════════════════════════════════════════
+       NAVBAR
+    ═══════════════════════════════════════════════════ */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.4s ease;
+    }
+    .navbar.scrolled {
+      background: rgba(27,42,74,0.97);
+      backdrop-filter: blur(10px);
+      padding: 0.8rem 2rem;
+      box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+    }
+    .navbar__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .navbar__logo-icon {
+      width: 84px;
+      height: 84px;
+      border-radius: 8px;
+      object-fit: contain;
+      transition: all 0.3s;
+    }
+    .navbar.scrolled .navbar__logo-icon { width: 68px; height: 68px; }
+    .navbar__logo-text {
+      font-family: var(--font-titulos);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-blanco);
+      letter-spacing: 0.03em;
+    }
+    .navbar__logo-text span { color: var(--color-acento); }
+    .navbar__links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .navbar__links a {
+      font-family: var(--font-titulos);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--color-blanco);
+      position: relative;
+      transition: color 0.3s;
+    }
+    .navbar__links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--color-acento);
+      transition: width 0.3s;
+    }
+    .navbar__links a:hover::after { width: 100%; }
+    .navbar__links a:hover { color: var(--color-acento); }
+    .navbar__cta {
+      background: var(--color-acento) !important;
+      color: var(--color-blanco) !important;
+      padding: 0.6rem 1.4rem;
+      border-radius: 4px;
+      font-family: var(--font-titulos);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      transition: all 0.3s;
+    }
+    .navbar__cta:hover {
+      background: var(--color-blanco) !important;
+      color: var(--color-primario) !important;
+      transform: translateY(-1px);
+    }
+    .navbar__cta::after { display: none !important; }
+    .navbar__hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 1001;
+    }
+    .navbar__hamburger span {
+      width: 26px;
+      height: 2px;
+      background: var(--color-blanco);
+      transition: all 0.3s;
+    }
+    .navbar__hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .navbar__hamburger.active span:nth-child(2) { opacity: 0; }
+    .navbar__hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .navbar__mobile {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--color-primario);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 999;
+    }
+    .navbar__mobile.active { display: flex; }
+    .navbar__mobile a {
+      font-family: var(--font-titulos);
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--color-blanco);
+      transition: color 0.3s;
+    }
+    .navbar__mobile a:hover { color: var(--color-acento); }
+
+    /* ═══════════════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════════════ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.08);
+      transition: transform 12s ease-out;
+    }
+    .hero.loaded .hero__bg { transform: scale(1); }
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(27,42,74,0.6) 0%,
+        rgba(27,42,74,0.75) 50%,
+        rgba(27,42,74,0.92) 100%
+      );
+    }
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 2rem;
+      max-width: 850px;
+    }
+    .hero__logo {
+      width: 300px;
+      height: auto;
+      margin: 0 auto 1.5rem;
+      filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+    }
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(232,133,42,0.15);
+      border: 1px solid rgba(232,133,42,0.3);
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-family: var(--font-titulos);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      color: var(--color-acento);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .hero__title {
+      font-family: var(--font-titulos);
+      font-size: clamp(3.5rem, 10vw, 7.5rem);
+      font-weight: 700;
+      color: var(--color-blanco);
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+      margin-bottom: 1.5rem;
+    }
+    .hero__title span { color: var(--color-acento); }
+    .hero__desc {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 2.5rem;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero__buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 1rem 2rem;
+      font-family: var(--font-titulos);
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .btn--primary {
+      background: var(--color-acento);
+      color: var(--color-blanco);
+    }
+    .btn--primary:hover {
+      background: var(--color-blanco);
+      color: var(--color-primario);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(232,133,42,0.3);
+    }
+    .btn--outline {
+      background: transparent;
+      color: var(--color-blanco);
+      border: 2px solid rgba(255,255,255,0.4);
+    }
+    .btn--outline:hover {
+      border-color: var(--color-blanco);
+      background: rgba(255,255,255,0.1);
+    }
+    .hero__scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: var(--color-blanco);
+      font-size: 1.5rem;
+      animation: bounce 2s infinite;
+      opacity: 0.6;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+
+    /* Diagonal divider */
+    .diagonal-divider {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+    .diagonal-divider svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 80px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       SOBRE NOSOTROS
+    ═══════════════════════════════════════════════════ */
+    .sobre-nosotros {
+      padding: 6rem 2rem;
+      background: var(--color-fondo);
+    }
+    .sobre-nosotros__grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .sobre-nosotros__img-wrap {
+      position: relative;
+      margin-left: -3rem;
+    }
+    .sobre-nosotros__img-wrap img {
+      border-radius: 6px;
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: contain;
+      background: var(--color-fondo);
+      padding: 2.5rem;
+      transform: scale(1.8);
+      transform-origin: center;
+    }
+    .sobre-nosotros__img-accent {
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      width: 120px;
+      height: 120px;
+      border: 3px solid var(--color-acento);
+      border-radius: 6px;
+      z-index: -1;
+    }
+    .sobre-nosotros__text h3 {
+      font-family: var(--font-titulos);
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      color: var(--color-acento);
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+    .sobre-nosotros__text h2 {
+      font-family: var(--font-titulos);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--color-primario);
+      line-height: 1;
+      margin-bottom: 1.2rem;
+    }
+    .sobre-nosotros__text p {
+      color: #555;
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+    .sobre-nosotros__highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .highlight-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .highlight-item__icon {
+      width: 48px;
+      height: 48px;
+      background: var(--color-primario);
+      color: var(--color-acento);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .highlight-item__text strong {
+      display: block;
+      font-family: var(--font-titulos);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--color-primario);
+    }
+    .highlight-item__text span {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       SERVICIOS
+    ═══════════════════════════════════════════════════ */
+    .servicios {
+      padding: 6rem 2rem;
+      background: var(--color-primario);
+      position: relative;
+    }
+    .servicios::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 300px;
+      background: rgba(232,133,42,0.05);
+      border-radius: 50%;
+      transform: translate(30%, -30%);
+    }
+    .servicios .section-title { color: var(--color-blanco); }
+    .servicios .section-subtitle { color: rgba(255,255,255,0.6); }
+    .servicios__grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .servicio-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 6px;
+      padding: 2rem 1.5rem;
+      transition: all 0.4s;
+      position: relative;
+      overflow: hidden;
+    }
+    .servicio-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--color-acento);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s;
+    }
+    .servicio-card:hover::before { transform: scaleX(1); }
+    .servicio-card:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateY(-4px);
+    }
+    .servicio-card__icon {
+      font-size: 2rem;
+      color: var(--color-acento);
+      margin-bottom: 1rem;
+    }
+    .servicio-card__name {
+      font-family: var(--font-titulos);
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--color-blanco);
+      margin-bottom: 0.5rem;
+    }
+    .servicio-card__desc {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+    .servicio-card__price {
+      font-family: var(--font-titulos);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--color-acento);
+      letter-spacing: 0.08em;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .servicio-card__price i { font-size: 0.8rem; }
+
+    /* ═══════════════════════════════════════════════════
+       GALERÍA
+    ═══════════════════════════════════════════════════ */
+    .galeria {
+      padding: 6rem 2rem;
+      background: var(--color-fondo);
+    }
+    .galeria__grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 250px;
+      gap: 1rem;
+    }
+    .galeria__item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #f0f0f0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    .galeria__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .galeria__item:hover img { transform: scale(1.03); }
+    .galeria__frase {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: var(--color-primario);
+      border-radius: 10px;
+      grid-column: span 2;
+    }
+    .galeria__frase p {
+      font-family: var(--font-titulos);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--color-blanco);
+      text-align: center;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+    }
+    .galeria__frase span { color: var(--color-acento); }
+
+    /* ═══════════════════════════════════════════════════
+       FAQ
+    ═══════════════════════════════════════════════════ */
+    .faq {
+      padding: 6rem 2rem;
+      background: var(--color-primario);
+    }
+    .faq .section-title { color: var(--color-blanco); }
+    .faq .section-subtitle { color: rgba(255,255,255,0.6); }
+    .faq__list {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+    .faq__item {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .faq__question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-family: var(--font-titulos);
+      font-size: 1.15rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--color-blanco);
+      text-align: left;
+      transition: color 0.3s;
+    }
+    .faq__question:hover { color: var(--color-acento); }
+    .faq__question i {
+      font-size: 0.9rem;
+      color: var(--color-acento);
+      transition: transform 0.3s;
+    }
+    .faq__item.active .faq__question i { transform: rotate(180deg); }
+    .faq__answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+    .faq__item.active .faq__answer {
+      max-height: 300px;
+      padding-bottom: 1.5rem;
+    }
+    .faq__answer p {
+      color: rgba(255,255,255,0.6);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       CTA FINAL
+    ═══════════════════════════════════════════════════ */
+    .cta {
+      position: relative;
+      padding: 7rem 2rem;
+      overflow: hidden;
+    }
+    .cta__bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+    }
+    .cta__overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(27,42,74,0.9);
+    }
+    .cta__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .cta__title {
+      font-family: var(--font-titulos);
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      font-weight: 700;
+      color: var(--color-blanco);
+      line-height: 0.95;
+      margin-bottom: 1rem;
+    }
+    .cta__title span { color: var(--color-acento); }
+    .cta__subtitle {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 2.5rem;
+    }
+    .cta__buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .cta__info {
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.95rem;
+    }
+    .cta__info-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .cta__info-item i { color: var(--color-acento); }
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════════════ */
+    .footer {
+      background: #111;
+      padding: 3rem 2rem 1.5rem;
+    }
+    .footer__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .footer__brand-icon {
+      width: 78px;
+      height: 78px;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+    .footer__brand-name {
+      font-family: var(--font-titulos);
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.03em;
+    }
+    .footer__brand-name span { color: var(--color-acento); }
+    .footer__social {
+      display: flex;
+      gap: 1rem;
+    }
+    .footer__social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.5);
+      transition: all 0.3s;
+    }
+    .footer__social a:hover {
+      border-color: var(--color-acento);
+      color: var(--color-acento);
+      transform: translateY(-2px);
+    }
+    .footer__bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      text-align: center;
+      color: rgba(255,255,255,0.25);
+      font-size: 0.8rem;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       WHATSAPP FLOTANTE
+    ═══════════════════════════════════════════════════ */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.8rem;
+      z-index: 900;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: all 0.3s;
+      animation: pulse-wa 2s infinite;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37,211,102,0.5);
+    }
+    .whatsapp-float.hidden { opacity: 0; pointer-events: none; transform: scale(0.8); }
+    @keyframes pulse-wa {
+      0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
+      70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .navbar__links { display: none; }
+      .navbar__hamburger { display: flex; }
+      .sobre-nosotros__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .galeria__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 0.8rem;
+      }
+      .galeria__item { grid-column: span 1 !important; grid-row: span 1 !important; }
+      .galeria__frase { grid-column: span 2 !important; }
+    }
+    @media (max-width: 600px) {
+      .galeria__grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+        gap: 0.8rem;
+      }
+      .galeria__item { grid-column: span 1 !important; grid-row: span 1 !important; }
+      .galeria__frase { grid-column: span 1 !important; padding: 1.5rem; }
+      .galeria__frase p { font-size: 1.2rem; }
+      .servicios__grid { grid-template-columns: 1fr; }
+      .footer__inner { flex-direction: column; text-align: center; }
+      .cta__info { flex-direction: column; align-items: center; }
+      .hero__buttons { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 280px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar" aria-label="Navegación principal">
+    <a href="#hero" class="navbar__brand">
+      <img class="navbar__logo-icon" id="nav-logo" src="" alt="Logo">
+      <span class="navbar__logo-text" id="nav-logo-text"></span>
+    </a>
+    <div class="navbar__links">
+      <a href="#sobre-nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto" class="navbar__cta" id="nav-cta">Pide Presupuesto</a>
+    </div>
+    <div class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="navbar__mobile" id="mobile-menu">
+    <a href="#sobre-nosotros" class="mobile-link">Nosotros</a>
+    <a href="#servicios" class="mobile-link">Servicios</a>
+    <a href="#galeria" class="mobile-link">Galería</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#contacto" class="mobile-link" id="mobile-cta">Pide Presupuesto</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" id="hero-bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content" data-aos="fade-up" data-aos-duration="1000">
+      <img class="hero__logo" id="hero-logo" src="" alt="Logo">
+      <div class="hero__badge" id="hero-badge"></div>
+      <h1 class="hero__title" id="hero-title"></h1>
+      <p class="hero__desc" id="hero-desc"></p>
+      <div class="hero__buttons">
+        <a class="btn btn--primary" id="hero-wa" href="#" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Pide tu presupuesto gratis
+        </a>
+        <a class="btn btn--outline" id="hero-call" href="#">
+          <i class="fas fa-phone"></i> Llámanos ahora
+        </a>
+      </div>
+    </div>
+    <div class="diagonal-divider">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,80 L1200,80 L1200,20 L0,80 Z" fill="var(--color-fondo)"></path>
+      </svg>
+    </div>
+    <a href="#sobre-nosotros" class="hero__scroll" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       SOBRE NOSOTROS
+  ═══════════════════════════════════════════════════ -->
+  <section class="sobre-nosotros" id="sobre-nosotros">
+    <div class="sobre-nosotros__grid">
+      <div class="sobre-nosotros__img-wrap" data-aos="fade-right" data-aos-duration="800">
+        <img id="sobre-img" src="" alt="Logo de Reformas Cristian">
+        <div class="sobre-nosotros__img-accent"></div>
+      </div>
+      <div class="sobre-nosotros__text" data-aos="fade-left" data-aos-duration="800">
+        <h3>Nuestra historia</h3>
+        <h2 id="sobre-titulo"></h2>
+        <p id="sobre-texto"></p>
+        <div class="sobre-nosotros__highlights" id="sobre-highlights"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       SERVICIOS
+  ═══════════════════════════════════════════════════ -->
+  <section class="servicios" id="servicios">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Nuestros servicios</h2>
+      <p class="section-subtitle">Cada obra es un proyecto nuevo. Hacemos presupuestos sin compromiso, en persona o por videollamada.</p>
+    </div>
+    <div class="servicios__grid" id="servicios-grid"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       GALERÍA
+  ═══════════════════════════════════════════════════ -->
+  <section class="galeria" id="galeria">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Nuestro trabajo</h2>
+      <p class="section-subtitle">Así quedan las cosas cuando las hace gente que sabe.</p>
+    </div>
+    <div class="galeria__grid" id="galeria-grid"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Preguntas frecuentes</h2>
+      <p class="section-subtitle">Las dudas más comunes de nuestros clientes.</p>
+    </div>
+    <div class="faq__list" id="faq-list"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CTA FINAL
+  ═══════════════════════════════════════════════════ -->
+  <section class="cta" id="contacto">
+    <div class="cta__bg" id="cta-bg"></div>
+    <div class="cta__overlay"></div>
+    <div class="cta__content" data-aos="zoom-in" data-aos-duration="800">
+      <h2 class="cta__title" id="cta-title"></h2>
+      <p class="cta__subtitle" id="cta-subtitle"></p>
+      <div class="cta__buttons">
+        <a class="btn btn--primary" id="cta-wa" href="#" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Pide tu presupuesto gratis
+        </a>
+        <a class="btn btn--outline" id="cta-call" href="#">
+          <i class="fas fa-phone"></i> Llámanos
+        </a>
+      </div>
+      <div class="cta__info" id="cta-info"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img class="footer__brand-icon" id="footer-logo" src="" alt="Logo">
+        <span class="footer__brand-name" id="footer-name"></span>
+      </div>
+      <div class="footer__social" id="footer-social"></div>
+    </div>
+    <div class="footer__bottom">
+      <p id="footer-copy"></p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════
+       WHATSAPP FLOTANTE
+  ═══════════════════════════════════════════════════ -->
+  <a class="whatsapp-float" id="whatsapp-float" href="#" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ═══════════════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════════════ -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // ╔══════════════════════════════════════════════════╗
+    // ║           CONFIGURACIÓN DEL SITIO                ║
+    // ║  Modifica aquí todos los datos de tu negocio.   ║
+    // ║  NO toques el resto del código salvo que sepas  ║
+    // ║  lo que estás haciendo.                         ║
+    // ╚══════════════════════════════════════════════════╝
+
+    const CONFIG = {
+
+      // ── NEGOCIO ────────────────────────────────────────
+      nombreNegocio:   "Reformas Cristian",
+      eslogan:         "20 años construyendo confianza",
+      descripcion:     "Reformas, pintura exterior e interior, reparaciones y decoración de interiores. Cercanía con el cliente y posibilidad de presupuesto mediante videollamada.",
+      ciudad:          "Granada",
+      direccion:       "Parque Nueva Granada, Granada",
+      horario:         "Lun a Vie: 8:00–19:00",
+
+      // ── CONTACTO ───────────────────────────────────────
+      whatsapp:        "+34670757224",
+      telefono:        "670757224",
+      mensajeWA:       "¡Hola! Quiero presupuesto para una reforma en Reformas Cristian",
+
+      // ── COLORES ────────────────────────────────────────
+      colorPrimario:   "#1B2A4A",
+      colorAcento:     "#E8852A",
+      colorFondo:      "#F8F6F3",
+
+      // ── IMÁGENES ───────────────────────────────────────
+      logoUrl:              "logo.png",
+      imagenHero:           "foto1.png",
+      imagenSobreNosotros:  "foto6.png",
+
+      // ── SERVICIOS ──────────────────────────────────────
+      servicios: [
+        { nombre: "Reformas generales",        descripcion: "Reformas completas de viviendas y locales. Cocinas, baños, suelos, tabiques, todo tipo de trabajos.", precio: "Presupuesto", icono: "fa-house-chimney" },
+        { nombre: "Pintura exterior e interior", descripcion: "Pintura de fachadas, paredes y techos. Trabajamos con materiales de calidad.", precio: "Presupuesto", icono: "fa-fill-drip" },
+        { nombre: "Reparaciones generales",     descripcion: "Fontanería, electricidad, goteras, averías del día a día. Solucionamos lo que haga falta.", precio: "Presupuesto", icono: "fa-wrench" },
+        { nombre: "Decoración de interiores",   descripcion: "Diseño y ejecución de espacios. Te asesoramos para que quede como tú quieres.", precio: "Presupuesto", icono: "fa-couch" },
+      ],
+
+      // ── GALERÍA ────────────────────────────────────────
+      galeria: [
+        { src: "foto1.png", cols: 2, rows: 1 },
+        { src: "foto2.jpg", cols: 1, rows: 2 },
+        { src: "foto4.jpg", cols: 1, rows: 1 },
+        { src: "foto5.jpg", cols: 1, rows: 1 },
+        { src: "foto6.png", cols: 1, rows: 1 },
+      ],
+      fraseGaleria: "Cada obra es un proyecto nuevo. Tu espacio, a tu medida.",
+
+      // ── FAQ ────────────────────────────────────────────
+      faq: [
+        { pregunta: "¿Hacéis presupuestos por videollamada?", respuesta: "Sí. Si no puedes vernos en persona, nos conectamos por videollamada, nos enseñas el espacio y te hacemos un presupuesto sin compromiso." },
+        { pregunta: "¿Trabajáis fuera de Granada?", respuesta: "Sí. Además de Granada, trabajamos en Málaga y Jaén. Pregúntanos por tu zona y vemos cómo encajamos." },
+        { pregunta: "¿Cuánto tarda una reforma?", respuesta: "Depende de cada proyecto. Lo que sí te podemos decir es que nuestro equipo cualificado va lo más rápido que puede sin perder calidad. Los plazos los detallamos en el presupuesto." },
+        { pregunta: "¿Qué formas de pago aceptáis?", respuesta: "Pregunta por las opciones de pago cuando hagas el presupuesto. Vemos qué te viene mejor." },
+      ],
+
+      // ── REDES SOCIALES ─────────────────────────────────
+      instagram: "",
+      facebook:  "",
+      tiktok:    "",
+
+      // ── SEO ────────────────────────────────────────────
+      metaDescripcion: "Reformas, pintura interior y exterior, reparaciones y albañilería en Granada, Málaga y Jaén. 20 años de experiencia. Presupuesto sin compromiso por videollamada.",
+      keywords:        "reformas granada, reformas malaga, reformas jaen, pintor granada, pintor malaga, pintor jaen, pintura granada, pintura malaga, pintura jaen, reparaciones granada, reparaciones malaga, reparaciones jaen, albañileria granada, albañileria malaga, albañileria jaen, fontaneria, electricidad, decoracion interiores, presupuesto reformas",
+
+    };
+
+    // ═══════════════════════════════════════════════════
+    //  APLICAR CONFIGURACIÓN
+    // ═══════════════════════════════════════════════════
+
+    document.documentElement.style.setProperty('--color-primario', CONFIG.colorPrimario);
+    document.documentElement.style.setProperty('--color-acento', CONFIG.colorAcento);
+    document.documentElement.style.setProperty('--color-fondo', CONFIG.colorFondo);
+
+    document.title = `${CONFIG.nombreNegocio} | Reformas, Pintura y Reparaciones en Granada, Málaga y Jaén`;
+    document.querySelector('meta[name="description"]').content = CONFIG.metaDescripcion;
+    document.querySelector('meta[name="keywords"]').content = CONFIG.keywords;
+    document.querySelector('meta[property="og:title"]').content = `${CONFIG.nombreNegocio} | Reformas, Pintura y Reparaciones en Granada, Málaga y Jaén`;
+    document.querySelector('meta[property="og:description"]').content = CONFIG.metaDescripcion;
+
+    const waLink = `https://wa.me/${CONFIG.whatsapp.replace(/[^0-9]/g,'')}?text=${encodeURIComponent(CONFIG.mensajeWA)}`;
+
+    // ═══════════════════════════════════════════════════
+    //  NAVBAR
+    // ═══════════════════════════════════════════════════
+
+    const navbar = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Logo text
+    const logoName = CONFIG.nombreNegocio.split(' ');
+    document.getElementById('nav-logo-text').innerHTML =
+      logoName.length > 1 ? `${logoName.slice(0, -1).join(' ')} <span>${logoName.slice(-1)}</span>` : CONFIG.nombreNegocio;
+    document.getElementById('footer-name').innerHTML =
+      logoName.length > 1 ? `${logoName.slice(0, -1).join(' ')} <span>${logoName.slice(-1)}</span>` : CONFIG.nombreNegocio;
+
+    // Logo images
+    document.getElementById('nav-logo').src = CONFIG.logoUrl;
+    document.getElementById('nav-logo').alt = CONFIG.nombreNegocio;
+    document.getElementById('footer-logo').src = CONFIG.logoUrl;
+    document.getElementById('footer-logo').alt = CONFIG.nombreNegocio;
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    // ═══════════════════════════════════════════════════
+    //  HERO
+    // ═══════════════════════════════════════════════════
+
+    document.getElementById('hero-bg').style.backgroundImage = `url('${CONFIG.imagenHero}')`;
+    document.getElementById('hero-logo').src = CONFIG.logoUrl;
+    document.getElementById('hero-logo').alt = CONFIG.nombreNegocio;
+    document.getElementById('hero-badge').innerHTML = `<i class="fas fa-location-dot"></i> ${CONFIG.ciudad} · Málaga · Jaén`;
+    document.getElementById('hero-title').innerHTML = `Reformas<br><span>Cristian</span>`;
+    document.getElementById('hero-desc').textContent = CONFIG.descripcion.split('.')[0] + '.';
+
+    document.getElementById('hero-wa').href = waLink;
+    document.getElementById('hero-call').href = `tel:${CONFIG.telefono}`;
+    document.getElementById('nav-cta').href = waLink;
+    document.getElementById('mobile-cta').href = waLink;
+
+    window.addEventListener('scroll', () => {
+      const bg = document.getElementById('hero-bg');
+      if (bg) bg.style.transform = `scale(1.08) translateY(${window.scrollY * 0.15}px)`;
+    });
+
+    setTimeout(() => document.querySelector('.hero').classList.add('loaded'), 100);
+
+    // ═══════════════════════════════════════════════════
+    //  SOBRE NOSOTROS
+    // ═══════════════════════════════════════════════════
+
+    document.getElementById('sobre-img').src = CONFIG.logoUrl;
+    document.getElementById('sobre-img').alt = `Logo de ${CONFIG.nombreNegocio}`;
+    document.getElementById('sobre-titulo').textContent = 'De padre a hijo, 20 años haciendo lo que nos gusta';
+    document.getElementById('sobre-texto').textContent =
+      'Empezamos hace 20 años como un oficio de familia. Hoy seguimos con la misma filosofía: hacer las cosas bien y tratar al cliente como se debe. Nuestra cuadrilla cualificada lleva años trabajando juntos y eso se nota. Si necesitas un presupuesto, puedes venir a vernos o hacerlo por videollamada — lo que te venga mejor.';
+
+    const highlights = [
+      { icon: 'fa-calendar-check', title: '20 años de oficio',   desc: 'Experiencia de padres a hijos' },
+      { icon: 'fa-users',          title: 'Cuadrilla cualificada', desc: 'Equipo que lleva años trabajando juntos' },
+      { icon: 'fa-video',          title: 'Presupuesto por videollamada', desc: 'Sin compromiso, como te sea más cómodo' },
+    ];
+    document.getElementById('sobre-highlights').innerHTML = highlights.map(h => `
+      <div class="highlight-item">
+        <div class="highlight-item__icon"><i class="fas ${h.icon}"></i></div>
+        <div class="highlight-item__text">
+          <strong>${h.title}</strong>
+          <span>${h.desc}</span>
+        </div>
+      </div>
+    `).join('');
+
+    // ═══════════════════════════════════════════════════
+    //  SERVICIOS
+    // ═══════════════════════════════════════════════════
+
+    document.getElementById('servicios-grid').innerHTML = CONFIG.servicios.map((s, i) => `
+      <div class="servicio-card" data-aos="fade-up" data-aos-delay="${i * 100}">
+        <div class="servicio-card__icon"><i class="fas ${s.icono}"></i></div>
+        <h3 class="servicio-card__name">${s.nombre}</h3>
+        <p class="servicio-card__desc">${s.descripcion}</p>
+        <div class="servicio-card__price"><i class="fas fa-tag"></i> ${s.precio}</div>
+      </div>
+    `).join('');
+
+    // ═══════════════════════════════════════════════════
+    //  GALERÍA
+    // ═══════════════════════════════════════════════════
+
+    const galeriaGrid = document.getElementById('galeria-grid');
+    const fraseHtml = `<div class="galeria__frase"><p>${CONFIG.fraseGaleria.replace('.', '<span>.</span>')}</p></div>`;
+    galeriaGrid.innerHTML = CONFIG.galeria.map((img, i) => `
+      <div class="galeria__item" data-aos="fade-up" data-aos-delay="${i * 80}" style="grid-column: span ${img.cols}; grid-row: span ${img.rows};">
+        <img src="${img.src}" alt="Obra ${i + 1} de ${CONFIG.nombreNegocio}" loading="lazy">
+      </div>
+    `).join('') + fraseHtml;
+
+    // ═══════════════════════════════════════════════════
+    //  FAQ
+    // ═══════════════════════════════════════════════════
+
+    document.getElementById('faq-list').innerHTML = CONFIG.faq.map((f, i) => `
+      <div class="faq__item" data-aos="fade-up" data-aos-delay="${i * 80}">
+        <button class="faq__question" aria-expanded="false">
+          <span>${f.pregunta}</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq__answer"><p>${f.respuesta}</p></div>
+      </div>
+    `).join('');
+
+    document.querySelectorAll('.faq__question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const wasActive = item.classList.contains('active');
+        document.querySelectorAll('.faq__item').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+        });
+        if (!wasActive) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // ═══════════════════════════════════════════════════
+    //  CTA FINAL
+    // ═══════════════════════════════════════════════════
+
+    document.getElementById('cta-bg').style.backgroundImage = `url('${CONFIG.imagenHero}')`;
+    document.getElementById('cta-title').innerHTML = `¿Necesitas<br>una reforma<span>?</span>`;
+    document.getElementById('cta-subtitle').textContent = 'Presupuesto sin compromiso. En persona o por videollamada, como te venga mejor.';
+    document.getElementById('cta-wa').href = waLink;
+    document.getElementById('cta-call').href = `tel:${CONFIG.telefono}`;
+
+    document.getElementById('cta-info').innerHTML = `
+      <div class="cta__info-item"><i class="fas fa-location-dot"></i> ${CONFIG.direccion}</div>
+      <div class="cta__info-item"><i class="fas fa-clock"></i> ${CONFIG.horario}</div>
+      <div class="cta__info-item"><i class="fas fa-phone"></i> ${CONFIG.telefono}</div>
+    `;
+
+    // ═══════════════════════════════════════════════════
+    //  FOOTER
+    // ═══════════════════════════════════════════════════
+
+    const socialHTML = [];
+    if (CONFIG.instagram) socialHTML.push(`<a href="${CONFIG.instagram}" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>`);
+    if (CONFIG.facebook)  socialHTML.push(`<a href="${CONFIG.facebook}"  target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>`);
+    if (CONFIG.tiktok)    socialHTML.push(`<a href="${CONFIG.tiktok}"    target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>`);
+    document.getElementById('footer-social').innerHTML = socialHTML.join('');
+
+    document.getElementById('footer-copy').innerHTML =
+      `&copy; ${new Date().getFullYear()} ${CONFIG.nombreNegocio}. Todos los derechos reservados. &mdash; ${CONFIG.ciudad}`;
+
+    // ═══════════════════════════════════════════════════
+    //  WHATSAPP FLOTANTE
+    // ═══════════════════════════════════════════════════
+
+    const whatsappFloat = document.getElementById('whatsapp-float');
+    whatsappFloat.href = waLink;
+
+    function checkFloatVisibility() {
+      if (window.innerWidth <= 900) { whatsappFloat.classList.remove('hidden'); return; }
+      const ctaSection = document.getElementById('contacto');
+      const rect = ctaSection.getBoundingClientRect();
+      const visible = rect.top < window.innerHeight && rect.bottom > 0;
+      whatsappFloat.classList.toggle('hidden', visible);
+    }
+    window.addEventListener('scroll', checkFloatVisibility);
+    checkFloatVisibility();
+
+    // ═══════════════════════════════════════════════════
+    //  AOS INIT
+    // ═══════════════════════════════════════════════════
+
+    AOS.init({
+      once: true,
+      offset: 80,
+      duration: 700,
+      easing: 'ease-out-cubic',
+    });
+  </script>
+</body>
+</html>
